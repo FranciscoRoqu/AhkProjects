@@ -1,0 +1,2 @@
+﻿^!n:: SendInput "MousePos"
+return
