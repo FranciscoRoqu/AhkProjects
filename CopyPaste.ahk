@@ -3,8 +3,8 @@
 return
 }
 ^!u::{
-    SendEvent("Ctrl")
+    SendInput("^c")
     Sleep 50
-    Send("Ctrl")
+    SendInput("^v")
 return
 }
