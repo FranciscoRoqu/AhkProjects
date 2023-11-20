@@ -1,13 +1,11 @@
 ^!e::{
-    EmailRecipient := "francisco.roqu32007@gmail.com"
+    EmailRecipient := "jbrpalma73@gmail.com"
     EmailSubject := "Gay"
     EmailBody := "Gay"
     i := 0
     Run("https://mail.google.com")
-    if WinExist("ahk_exe opera.exe")
-    {
         Sleep 5000
-        while i <= 10
+        while i <= 5
             {
             i++
             Send("c")
@@ -16,37 +14,14 @@
             Send (EmailRecipient)
             Send "{Tab}"
             Send "{Tab}"
-        
+            ;sleep 500
             Send(EmailSubject)
             Send "{Tab}"
-            
+            ;sleep 500
             Send (EmailBody)
             Send "{Tab}{Enter}"
             Sleep 500
         }
         return
-    }
-    else
-    {
-        Sleep 20000
-        while i <= 10
-            {
-            i++
-            Send("c")
-            Sleep 1000
-        
-            Send (EmailRecipient)
-            Send "{Tab}"
-            Send "{Tab}"
-        
-            Send(EmailSubject)
-            Send "{Tab}"
-            
-            Send (EmailBody)
-            Send "{Tab}{Enter}"
-            Sleep 500
-        }
-        return
-    }
 }
 ^!r:: Reload
